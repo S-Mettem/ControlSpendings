@@ -9,7 +9,7 @@ namespace ControlSpendings.ViewsModels
         #region Заголовок окна 
         
         /// <summary> Заголовок окна </summary>
-        private string _Title;
+        private string _Title = "Главное окно - ControlS";
 
         public string Title
         {
