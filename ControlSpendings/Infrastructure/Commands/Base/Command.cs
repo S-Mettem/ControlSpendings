@@ -9,7 +9,7 @@ namespace ControlSpendings.Infrastructures.Commands.Base
         {
             add => CommandManager.RequerySuggested += value;
             remove => CommandManager.RequerySuggested -= value;
-        };
+        }
 
         public abstract bool CanExecute(object parameter);
 
