@@ -12,7 +12,7 @@ namespace ControlSpendings.ViewsModels
         #region Заголовок окна 
 
         /// <summary> Заголовок окна </summary>
-        private string _Title = "Главное окно - ControlS";
+        private string _Title = "Авторизиуйтесь - ControlS";
 
         public string Title
         {
@@ -21,6 +21,31 @@ namespace ControlSpendings.ViewsModels
         }
 
         #endregion
+
+        #region LoginField
+
+        private string _LoginField;
+
+        public string LoginField
+        {
+            get => _LoginField;
+            set => Set(ref _LoginField, value);
+        }
+
+        #endregion
+
+        #region StatusBar TextBlock
+
+        private string _StatusBarText = "Войдите в систему";
+
+        public string StatusBarText
+        {
+            get => _StatusBarText;
+        }
+
+        #endregion
+
+
 
         #region Commands
 
@@ -31,6 +56,7 @@ namespace ControlSpendings.ViewsModels
         private void OnCloseApplicationCommandExecuted(object p) => Application.Current.Shutdown();
         private bool CanCloseApplicationCommandExecute(object p) => true;
         #endregion
+
 
         #endregion
 
