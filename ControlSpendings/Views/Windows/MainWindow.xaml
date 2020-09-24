@@ -34,6 +34,7 @@
                 Background="#FF626DA0" 
                 Foreground="White"/>
                 <TextBox x:Name="LoginField"
+                MaxLength="10"
                 Margin="62,52,62,12" 
                 Text="{Binding LoginField, UpdateSourceTrigger=PropertyChanged}" 
                 TextWrapping="Wrap" 
